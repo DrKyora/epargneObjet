@@ -23,6 +23,8 @@ document.getElementById("formRemove").addEventListener("submit", (e) => {
   e.preventDefault();
   if (document.getElementById("remove").value === "") {
     return alert("Veuillez entrer un montant de retrait.");
+  } else if (parseInt(document.getElementById("remove").value) > myAccount.solde) {
+    return alert("Solde insuffisant.");
   } else {
     const retraitData = getRetraitData();
     const myRetrait = createRetrait();

@@ -4,7 +4,7 @@ class retrait {
   #retraitTime;
 
   constructor(retraitAmount) {
-    this.#retraitAmount = this.retraitAmount;
+    this.#retraitAmount = retraitAmount;
     this.#retraitDate = new Date().toLocaleDateString();
     this.#retraitTime = new Date().toLocaleTimeString();
   }

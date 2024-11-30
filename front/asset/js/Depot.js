@@ -4,7 +4,7 @@ class depot {
   #depotTime;
 
   constructor(depotAmount) {
-    this.#depotAmount = this.depotAmount;
+    this.#depotAmount = depotAmount;
     this.#depotDate = new Date().toLocaleDateString;
     this.#depotTime = new Date().toLocaleTimeString;
   }

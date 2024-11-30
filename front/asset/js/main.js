@@ -31,7 +31,7 @@ document.getElementById("formRemove").addEventListener("submit", (e) => {
     myRetrait.retraitAmount = retraitData.retraitAmount;
     myAccount.solde -= parseInt(retraitData.retraitAmount);
     myAccount.historiqueOperations.push(
-      `Dépôt de ${retraitData.retraitAmount}€ fait le ${retraitData.retraitDate} à ${retraitData.retraitTime}`
+      `Retrait de ${retraitData.retraitAmount}€ fait le ${retraitData.retraitDate} à ${retraitData.retraitTime}`
     );
     document.getElementById("result").innerHTML = myAccount.solde + " €";
   }
